@@ -57,4 +57,8 @@ https://github.com/jamin-eisenberg/ConvolutionAnimation/assets/117237268/1c2d6d7
 
 `main.py "e^{-0.5 t }" "math.e**(-0.5 * t)" "2\delta( t -1)" "2 if abs(t - 1) < 0.01 else 0" 0 3 0.005 low_quality`
 
-https://github.com/jamin-eisenberg/ConvolutionAnimation/assets/117237268/66dd4582-a46d-44b0-9f4c-3c7a5da5afb2
+It's not the prettiest, but I think it gives intuition quite well.
+
+
+https://github.com/jamin-eisenberg/ConvolutionAnimation/assets/117237268/d52c074b-78ad-45c8-ac00-8cfccbdf7841
+

@@ -151,7 +151,7 @@ class AnimatedConvolution(Scene):
 
 
 def main():
-    if not 7 <= len(sys.argv) <= 11:
+    if not 10 <= len(sys.argv) <= 11:
         print('Invalid command line arguments. Please consult the README.')
         return
 

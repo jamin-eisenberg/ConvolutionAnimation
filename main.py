@@ -83,7 +83,7 @@ class AnimatedConvolution(Scene):
                            lambda x: x.move_to(UP * (config.frame_height * 7 / 24) + LEFT * (config.frame_width / 4)))
         # establishes f's two titles, one with t and one with tau
         titlef1 = make_plot_title(axf, f"f(t) = {self.eq1_str}")
-        titlef2 = make_plot_title(axf, rf"f({TAU_LATEX}) = {self.eq1_str.replace('t', TAU_LATEX)}")
+        titlef2 = make_plot_title(axf, rf"f({TAU_LATEX}) = {self.eq1_str.replace(' t ', TAU_LATEX)}")
 
         # sets up the value used to change the position of g (eq2) and the shape of f times g
         t = ValueTracker(0)
@@ -104,8 +104,8 @@ class AnimatedConvolution(Scene):
         _, graphg2 = plot_g2()
         # prepare each title of g, with t, tau, and t-tau
         titleg1 = make_plot_title(axg, f"g(t) = {self.eq2_str}")
-        titleg2 = make_plot_title(axg, rf"g({TAU_LATEX}) = {self.eq2_str.replace('t', TAU_LATEX)}")
-        titleg3 = make_plot_title(axg, rf"g(t-{TAU_LATEX}) = {self.eq2_str.replace('t', f'(t-{TAU_LATEX})')}")
+        titleg2 = make_plot_title(axg, rf"g({TAU_LATEX}) = {self.eq2_str.replace(' t ', TAU_LATEX)}")
+        titleg3 = make_plot_title(axg, rf"g(t-{TAU_LATEX}) = {self.eq2_str.replace(' t ', f'(t-{TAU_LATEX})')}")
 
         # get the product function (relying on the value t)
         prod_func = modulate(self.eq1, lambda tau: self.eq2(t.get_value() - tau))
